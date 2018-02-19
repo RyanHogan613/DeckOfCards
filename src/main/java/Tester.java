@@ -67,8 +67,6 @@ public class Tester {
 
         System.out.println(deckOfCards.dealCard());
         System.out.println(deckOfCards.dealCard());
-
-
     }
 
 }

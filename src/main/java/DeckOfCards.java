@@ -112,8 +112,14 @@ public class DeckOfCards {
      */
     public String dealCard() {
 
-        String cardReturned = deck.get(deck.size() - 1).getCard();
-        deck.remove(deck.size() - 1);
+        String cardReturned;
+
+        if (deck.size() != 0) {
+            cardReturned = deck.get(deck.size() - 1).getCard();
+            deck.remove(deck.size() - 1);
+        } else {
+            cardReturned = "Deck is empty";
+        }
 
         return cardReturned;
     }
